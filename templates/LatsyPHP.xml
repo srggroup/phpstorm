@@ -1,0 +1,36 @@
+<templateSet group="LatsyPHP">
+  <template name="collectionAdd" value="/**&#10; * Add $NAME_UPPER$&#10; *&#10; * @param $ENTITY$ $$$NAME$&#10; *&#10; * @return bool&#10; */&#10;public function add$NAME_UPPER$($ENTITY$ $$$NAME$): bool {&#10;&#9;return $this-&gt;$PROPERTY$-&gt;add($$$NAME$);&#10;}&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME_UPPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="camelCase(NAME_UPPER)" defaultValue="" alwaysStopAt="false" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="collectionRemove" value="/**&#10; * Remove $NAME_UPPER$&#10; *&#10; * @param $ENTITY$ $$$NAME$&#10; *&#10; * @return bool&#10; */&#10;public function remove$NAME_UPPER$($ENTITY$ $$$NAME$): bool {&#10;&#9;return $this-&gt;$PROPERTY$-&gt;removeElement($$$NAME$);&#10;}&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME_UPPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="camelCase(NAME_UPPER)" defaultValue="" alwaysStopAt="false" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="collectionAddRemove" value="/**&#10; * Add $NAME_UPPER$&#10; *&#10; * @param $ENTITY$ $$$NAME$&#10; *&#10; * @return bool&#10; */&#10;public function add$NAME_UPPER$($ENTITY$ $$$NAME$): bool {&#10;&#9;return $this-&gt;$PROPERTY$-&gt;add($$$NAME$);&#10;}&#10;&#10;&#10;/**&#10; * Remove $NAME_UPPER$&#10; *&#10; * @param $ENTITY$ $$$NAME$&#10; *&#10; * @return bool&#10; */&#10;public function remove$NAME_UPPER$($ENTITY$ $$$NAME$): bool {&#10;&#9;return $this-&gt;$PROPERTY$-&gt;removeElement($$$NAME$);&#10;}&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME_UPPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="camelCase(NAME_UPPER)" defaultValue="" alwaysStopAt="false" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="entest" value="/**&#10; * Test $PROPERTY$&#10; */&#10;public function test$PROPERTY$() {&#10;&#9;$this-&gt;$TESTER$('$PROPERTY$');&#10;}&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TESTER" expression="&quot;setGetTester&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+</templateSet>
